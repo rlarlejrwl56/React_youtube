@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
+import React, { memo, useRef } from 'react';
 import styles from "./video_select.module.css";
 
-const Video_select = ({onSerach}) => {
+const Video_select = memo(({onSerach}) => {
     const inputRef = useRef();
     const handleSerach = () =>{
         const value = inputRef.current.value;
@@ -27,6 +27,5 @@ const Video_select = ({onSerach}) => {
             </button>
         </header>
     )
-};
-
+});
 export default Video_select;

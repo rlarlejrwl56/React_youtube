@@ -1,0 +1,11 @@
+.detail {
+    padding: 0.2em;
+}
+
+.hr{
+    border-color: #f9f9f9;
+}
+
+.description {
+    white-space: pre-wrap;
+}
